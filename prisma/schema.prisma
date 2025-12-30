@@ -68,8 +68,7 @@ model Business {
 }
 
 model CustomerProfile {
-  id        String   @id @default(uuid())
-  userId    String   @unique
+  userId    String   @id
   phone     String?
   address   String?
   metadata  Json?
@@ -79,7 +78,6 @@ model CustomerProfile {
   user            User             @relation(fields: [userId], references: [id], onDelete: Cascade)
   serviceRequests ServiceRequest[]
 
-  @@index([userId])
   @@map("customer_profiles")
 }
 

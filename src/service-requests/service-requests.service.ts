@@ -44,7 +44,7 @@ export class ServiceRequestsService {
     });
 
     const customer = await this.prisma.customerProfile.findUnique({
-      where: { id: customerProfileId },
+      where: { userId: customerProfileId },
       select: { userId: true },
     });
 
@@ -222,7 +222,7 @@ export class ServiceRequestsService {
 
     if (userRole !== 'ADMIN' && userRole !== 'STAFF') {
       const customer = await this.prisma.customerProfile.findUnique({
-        where: { id: request.customerId },
+        where: { userId: request.customerId },
         select: { userId: true },
       });
       if (customer?.userId !== userId) {
@@ -265,7 +265,7 @@ export class ServiceRequestsService {
 
     if (status === ServiceRequestStatus.SUBMITTED) {
       const customer = await this.prisma.customerProfile.findUnique({
-        where: { id: request.customerId },
+        where: { userId: request.customerId },
         select: { userId: true },
       });
       if (customer?.userId !== userId) {
@@ -300,7 +300,7 @@ export class ServiceRequestsService {
 
     if (status === ServiceRequestStatus.SUBMITTED) {
       const customer = await this.prisma.customerProfile.findUnique({
-        where: { id: request.customerId },
+        where: { userId: request.customerId },
         include: { user: { select: { email: true, id: true } } },
       });
 
@@ -313,7 +313,7 @@ export class ServiceRequestsService {
 
     if (status === ServiceRequestStatus.COMPLETED) {
       const customer = await this.prisma.customerProfile.findUnique({
-        where: { id: request.customerId },
+        where: { userId: request.customerId },
         include: { user: { select: { email: true, id: true } } },
       });
 

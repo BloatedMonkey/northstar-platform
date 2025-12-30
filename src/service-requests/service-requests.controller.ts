@@ -42,7 +42,7 @@ export class ServiceRequestsController {
       throw new NotFoundException('Customer profile not found');
     }
 
-    const request = await this.serviceRequestsService.create(customer.id, createDto);
+    const request = await this.serviceRequestsService.create(customer.userId, createDto);
     return { data: request };
   }
 
@@ -64,7 +64,7 @@ export class ServiceRequestsController {
 
     const { data, total } = await this.serviceRequestsService.findAll({
       status: query.status,
-      customerId: customer?.id,
+      customerId: customer?.userId,
       q: query.q,
       minPriority: query.minPriority,
       maxPriority: query.maxPriority,
@@ -89,13 +89,6 @@ export class ServiceRequestsController {
   @Get(':id')
   @ApiOperation({ summary: 'Get service request by ID' })
   async findOne(@Param('id') id: string, @Request() req: AuthenticatedRequest) {
-    const customer =
-      req.user.role === 'CUSTOMER'
-        ? await this.prisma.customerProfile.findUnique({
-            where: { userId: req.user.id },
-          })
-        : null;
-
     const customerProfile =
       req.user.role === 'CUSTOMER'
         ? await this.prisma.customerProfile.findUnique({
@@ -126,7 +119,7 @@ export class ServiceRequestsController {
       throw new NotFoundException('Customer profile not found');
     }
 
-    const request = await this.serviceRequestsService.update(id, updateDto, customer.id);
+    const request = await this.serviceRequestsService.update(id, updateDto, customer.userId);
     return { data: request };
   }
 

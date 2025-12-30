@@ -266,6 +266,20 @@ Jobs are triggered by events emitted from the application.
 - **docs/ARCHITECTURE.md** - System architecture overview
 - **docs/CHANGELOG.md** - Complete changelog and fixes summary
 
+## Windows Setup Notes
+
+If you're on Windows PowerShell:
+
+1. **Use `npx` for scripts** - All test scripts use `npx` to ensure local binaries are used
+2. **No `make` command** - Use these commands instead:
+   ```bash
+   docker compose up -d
+   npm run prisma:generate
+   npm run prisma:migrate
+   npm run prisma:seed
+   npm run start:dev
+   ```
+
 ## License
 
 UNLICENSED
