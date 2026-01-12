@@ -2,11 +2,11 @@
 
 **Author:** Arman Hazrati  
 **License:** MIT  
-**Status:** Production-Ready Portfolio Project
+**Status:** Production-Ready
 
 Production-grade backend service for a service marketplace platform. Built with NestJS, TypeScript, PostgreSQL, and Redis.
 
-> 🎯 **Portfolio Showcase Project**: This project demonstrates enterprise-level backend development skills, clean architecture, and modern software engineering practices.
+This project demonstrates enterprise-level backend development skills, clean architecture, security best practices, and modern software engineering principles. Complete with comprehensive testing, CI/CD pipeline, Docker support, and extensive documentation.
 
 ## Architecture
 
@@ -258,19 +258,20 @@ Jobs are triggered by events emitted from the application.
 
 ## Documentation
 
-### Quick Start & Guides
-- **README.md** - This file (project overview)
-- **QUICKSTART.md** - Quick setup guide
-- **DEMO.md** - Portfolio demo guide
-- **TESTING_GUIDE.md** - Comprehensive testing documentation
-- **PRODUCTION_READY_CHECKLIST.md** - Production readiness verification
+This project includes comprehensive documentation:
 
-### Technical Documentation
-- **docs/CLIENT_DEMO.md** - Non-technical overview for clients
-- **docs/TECH_DEMO.md** - Technical demo with endpoints and flows
-- **docs/API.md** - Detailed API reference
-- **docs/ARCHITECTURE.md** - System architecture overview
-- **docs/CHANGELOG.md** - Complete changelog and fixes summary
+- **[QUICKSTART.md](QUICKSTART.md)** - Quick setup and installation guide
+- **[PROJECT_SUMMARY.md](PROJECT_SUMMARY.md)** - Complete technical overview
+- **[DEPLOYMENT_GUIDE.md](DEPLOYMENT_GUIDE.md)** - Production deployment instructions
+- **[TESTING_GUIDE.md](TESTING_GUIDE.md)** - Testing strategy and coverage
+- **[PROJECT_STRUCTURE.md](PROJECT_STRUCTURE.md)** - Code organization
+- **[SECURITY.md](SECURITY.md)** - Security policy and best practices
+- **[CONTRIBUTING.md](CONTRIBUTING.md)** - Contribution guidelines
+- **[docs/API.md](docs/API.md)** - Complete API reference
+- **[docs/ARCHITECTURE.md](docs/ARCHITECTURE.md)** - System architecture
+- **[docs/TECH_DEMO.md](docs/TECH_DEMO.md)** - Technical demonstration
+
+API documentation is also available via Swagger UI at `/api/docs` when running the server.
 
 ## Windows Setup Notes
 

@@ -1,14 +1,14 @@
-# Northstar Backend - Portfolio Showcase
+# Northstar Backend - Technical Portfolio
 
 **Author:** Arman Hazrati  
 **Project Type:** Production-Grade Backend Service  
-**Status:** ✅ Production Ready
+**Status:** Production Ready
 
 ---
 
-## 🎯 Project Purpose
+## Project Overview
 
-This project serves as a comprehensive demonstration of enterprise-level backend development skills, showcasing:
+Northstar Backend is a production-grade service marketplace platform demonstrating enterprise-level backend development expertise. This project showcases:
 
 - **Modern Architecture**: Event-driven, modular design with NestJS
 - **Security Best Practices**: JWT authentication, RBAC, audit logging
