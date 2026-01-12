@@ -1,3 +1,8 @@
+/**
+ * Provider Responses Service
+ * @author Arman Hazrati
+ */
+
 import { Injectable, NotFoundException, ForbiddenException } from '@nestjs/common';
 import { PrismaService } from '../prisma/prisma.service';
 import { CreateProviderResponseDto } from './dto/create-provider-response.dto';

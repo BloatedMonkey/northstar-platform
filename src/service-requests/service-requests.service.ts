@@ -1,3 +1,9 @@
+/**
+ * Service Requests Management
+ * @author Arman Hazrati
+ * @description Core business logic for service request lifecycle management
+ */
+
 import {
   Injectable,
   NotFoundException,

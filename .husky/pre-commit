@@ -1,0 +1,14 @@
+#!/usr/bin/env sh
+# Northstar Backend - Pre-commit Hook
+# Author: Arman Hazrati
+
+. "$(dirname -- "$0")/_/husky.sh"
+
+# Run linting
+npm run lint
+
+# Run type checking
+npm run build
+
+# Run tests
+npm run test

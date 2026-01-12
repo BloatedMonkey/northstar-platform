@@ -1,3 +1,9 @@
+/**
+ * Authentication Service
+ * @author Arman Hazrati
+ * @description Handles user authentication, JWT token generation and validation
+ */
+
 import { Injectable, UnauthorizedException } from '@nestjs/common';
 import { JwtService } from '@nestjs/jwt';
 import { ConfigService } from '@nestjs/config';
@@ -29,8 +35,8 @@ export class AuthService {
       throw new UnauthorizedException('Account is not active');
     }
 
-            // eslint-disable-next-line @typescript-eslint/no-unused-vars
-            const { password: _, ...result } = user;
+    // eslint-disable-next-line @typescript-eslint/no-unused-vars
+    const { password: _, ...result } = user;
     return result;
   }
 

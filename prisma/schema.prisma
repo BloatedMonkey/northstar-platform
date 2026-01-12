@@ -1,3 +1,7 @@
+// Northstar Backend - Database Schema
+// Author: Arman Hazrati
+// License: MIT
+
 generator client {
   provider = "prisma-client-js"
 }

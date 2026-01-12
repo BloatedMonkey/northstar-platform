@@ -8,7 +8,8 @@ export function IsStrongPassword(validationOptions?: ValidationOptions) {
       propertyName: propertyName,
       options: validationOptions,
       validator: {
-                validate(value: any, _args: ValidationArguments) {
+        // eslint-disable-next-line @typescript-eslint/no-unused-vars
+        validate(value: any, _args: ValidationArguments) {
           if (typeof value !== 'string') {
             return false;
           }
@@ -26,7 +27,8 @@ export function IsStrongPassword(validationOptions?: ValidationOptions) {
             (hasNumbers || hasSpecialChar)
           );
         },
-                defaultMessage(_args: ValidationArguments) {
+        // eslint-disable-next-line @typescript-eslint/no-unused-vars
+        defaultMessage(_args: ValidationArguments) {
           return 'Password must be at least 8 characters long and contain uppercase, lowercase, and either numbers or special characters';
         },
       },

@@ -15,11 +15,9 @@ import { Test, TestingModule } from '@nestjs/testing';
 import { INestApplication, ValidationPipe } from '@nestjs/common';
 import * as request from 'supertest';
 import { AppModule } from '../src/app.module';
-import { PrismaService } from '../src/prisma/prisma.service';
 
 describe('AppController (e2e)', () => {
   let app: INestApplication;
-  let prisma: PrismaService;
   let accessToken: string;
 
   beforeAll(async () => {
@@ -36,8 +34,6 @@ describe('AppController (e2e)', () => {
       }),
     );
     await app.init();
-
-    prisma = app.get(PrismaService);
   });
 
   afterAll(async () => {

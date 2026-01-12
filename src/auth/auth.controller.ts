@@ -4,7 +4,6 @@ import { ApiTags, ApiOperation, ApiBearerAuth } from '@nestjs/swagger';
 import { AuthService } from './auth.service';
 import { LocalAuthGuard } from './guards/local-auth.guard';
 import { JwtAuthGuard } from '../common/guards/jwt-auth.guard';
-import { LoginDto } from './dto/login.dto';
 import { RefreshTokenDto } from './dto/refresh-token.dto';
 import { Public } from '../common/decorators/public.decorator';
 
@@ -17,7 +16,7 @@ export class AuthController {
   @UseGuards(LocalAuthGuard)
   @Post('login')
   @ApiOperation({ summary: 'Login with email and password' })
-  async login(@Request() req: AuthenticatedRequest, @Body() _loginDto: LoginDto) {
+  async login(@Request() req: AuthenticatedRequest) {
     return this.authService.login(req.user);
   }
 

@@ -1,3 +1,9 @@
+/**
+ * Cleanup Job Processor
+ * @author Arman Hazrati
+ * @description Handles periodic cleanup tasks like removing old audit logs
+ */
+
 import { Processor, WorkerHost } from '@nestjs/bullmq';
 import { Job } from 'bullmq';
 import { Logger } from '../../common/logger/logger.service';

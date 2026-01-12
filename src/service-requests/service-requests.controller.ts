@@ -130,13 +130,6 @@ export class ServiceRequestsController {
     @Body() updateStatusDto: UpdateStatusDto,
     @Request() req: AuthenticatedRequest,
   ) {
-    const customer =
-      req.user.role === 'CUSTOMER'
-        ? await this.prisma.customerProfile.findUnique({
-            where: { userId: req.user.id },
-          })
-        : null;
-
     const request = await this.serviceRequestsService.updateStatus(
       id,
       updateStatusDto.status,

@@ -1,3 +1,8 @@
+/**
+ * Admin Service - Audit Logs & Administration
+ * @author Arman Hazrati
+ */
+
 import { Injectable } from '@nestjs/common';
 import { PrismaService } from '../prisma/prisma.service';
 

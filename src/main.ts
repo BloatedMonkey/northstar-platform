@@ -1,3 +1,14 @@
+/**
+ * Northstar Backend - Main Application Entry Point
+ *
+ * @author Arman Hazrati
+ * @description Production-grade service marketplace backend
+ * @license MIT
+ *
+ * This is a portfolio project demonstrating enterprise-level
+ * backend development with NestJS, TypeScript, and PostgreSQL.
+ */
+
 import { NestFactory } from '@nestjs/core';
 import { ValidationPipe } from '@nestjs/common';
 import { SwaggerModule, DocumentBuilder } from '@nestjs/swagger';
@@ -52,8 +63,10 @@ async function bootstrap() {
 
   const config = new DocumentBuilder()
     .setTitle('Northstar API')
-    .setDescription('Service marketplace backend API')
+    .setDescription('Service marketplace backend API - Portfolio project by Arman Hazrati')
     .setVersion('1.0')
+    .setContact('Arman Hazrati', '', '')
+    .setLicense('MIT', 'https://opensource.org/licenses/MIT')
     .addBearerAuth()
     .addApiKey({ type: 'apiKey', in: 'header', name: 'X-API-Key' }, 'api-key')
     .build();

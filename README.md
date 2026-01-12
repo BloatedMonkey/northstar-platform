@@ -1,6 +1,12 @@
 # Northstar Backend
 
+**Author:** Arman Hazrati  
+**License:** MIT  
+**Status:** Production-Ready Portfolio Project
+
 Production-grade backend service for a service marketplace platform. Built with NestJS, TypeScript, PostgreSQL, and Redis.
+
+> 🎯 **Portfolio Showcase Project**: This project demonstrates enterprise-level backend development skills, clean architecture, and modern software engineering practices.
 
 ## Architecture
 
@@ -282,9 +288,21 @@ If you're on Windows PowerShell:
 
 ## Contributing
 
-This is a portfolio project. For questions or feedback, please open an issue on GitHub.
+Contributions, suggestions, and feedback are welcome! Please see [CONTRIBUTING.md](./CONTRIBUTING.md) for guidelines.
+
+This is a portfolio project demonstrating production-grade backend development by Arman Hazrati.
+
+## Author
+
+**Arman Hazrati**
+
+This project is part of my professional portfolio, showcasing production-grade backend development capabilities with modern technologies and best practices.
 
 ## License
 
-UNLICENSED - This is a portfolio project for demonstration purposes.
+MIT License - See LICENSE file for details
+
+Copyright (c) 2024 Arman Hazrati
+
+This project is open source and available for educational purposes. While the code is freely available, this project serves as a demonstration of professional software development skills.
 

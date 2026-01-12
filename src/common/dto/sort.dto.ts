@@ -9,7 +9,8 @@ export function IsValidSort(validationOptions?: ValidationOptions) {
       propertyName: propertyName,
       options: validationOptions,
       validator: {
-        validate(value: any, args: ValidationArguments): boolean {
+        // eslint-disable-next-line @typescript-eslint/no-unused-vars
+        validate(value: any, _args: ValidationArguments): boolean {
           if (typeof value !== 'string') {
             return false;
           }
@@ -22,6 +23,7 @@ export function IsValidSort(validationOptions?: ValidationOptions) {
             SORT_DIRECTIONS.includes(direction as any)
           );
         },
+        // eslint-disable-next-line @typescript-eslint/no-unused-vars
         defaultMessage(_args: ValidationArguments) {
           return `Sort must be in format "field:direction" where field is one of ${SORTABLE_FIELDS.join(', ')} and direction is ${SORT_DIRECTIONS.join(' or ')}`;
         },

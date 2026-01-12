@@ -1,3 +1,9 @@
+/**
+ * Northstar Backend - Root Application Module
+ * @author Arman Hazrati
+ * @license MIT
+ */
+
 import { Module } from '@nestjs/common';
 import { ConfigModule } from '@nestjs/config';
 import { ThrottlerModule } from '@nestjs/throttler';
