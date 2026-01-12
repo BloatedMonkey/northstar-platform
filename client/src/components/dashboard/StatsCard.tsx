@@ -30,7 +30,9 @@ export function StatsCard({ title, value, change, icon: Icon, color = 'blue' }: 
         <div className={`rounded-lg p-3 ${colorClasses[color]}`}>
           <Icon className="h-6 w-6" />
         </div>
-        <div className={`flex items-center space-x-1 text-sm ${isPositive ? 'text-green-600' : 'text-red-600'}`}>
+        <div
+          className={`flex items-center space-x-1 text-sm ${isPositive ? 'text-green-600' : 'text-red-600'}`}
+        >
           <TrendIcon className="h-4 w-4" />
           <span className="font-medium">{change}</span>
         </div>

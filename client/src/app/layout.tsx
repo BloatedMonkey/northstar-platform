@@ -1,10 +1,10 @@
 /**
  * Northstar Platform - Root Layout
- * 
+ *
  * @author Arman Hazrati
  * @license MIT
  * @copyright 2024 Arman Hazrati. All rights reserved.
- * 
+ *
  * This is a portfolio project demonstrating enterprise-level full-stack development.
  * Unauthorized use, duplication, or distribution without proper attribution is prohibited.
  */

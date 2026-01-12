@@ -1,10 +1,10 @@
 /**
  * Northstar Platform - Footer Component
- * 
+ *
  * @author Arman Hazrati
  * @license MIT
  * @description Application footer with copyright and attribution
- * 
+ *
  * This is a portfolio project demonstrating enterprise-level full-stack development.
  * Unauthorized use, duplication, or distribution without proper attribution is prohibited.
  */
@@ -32,16 +32,14 @@ export function Footer() {
           <div className="space-y-4">
             <h3 className="font-semibold text-gray-900">Technology Stack</h3>
             <div className="flex flex-wrap gap-2">
-              {['Next.js', 'NestJS', 'TypeScript', 'PostgreSQL', 'Redis', 'Docker'].map(
-                (tech) => (
-                  <span
-                    key={tech}
-                    className="rounded-md bg-gray-100 px-2 py-1 text-xs font-medium text-gray-700"
-                  >
-                    {tech}
-                  </span>
-                )
-              )}
+              {['Next.js', 'NestJS', 'TypeScript', 'PostgreSQL', 'Redis', 'Docker'].map((tech) => (
+                <span
+                  key={tech}
+                  className="rounded-md bg-gray-100 px-2 py-1 text-xs font-medium text-gray-700"
+                >
+                  {tech}
+                </span>
+              ))}
             </div>
           </div>
 
@@ -67,8 +65,7 @@ export function Footer() {
                 © {new Date().getFullYear()} Northstar Platform. All rights reserved.
               </p>
               <p className="mt-1">
-                Developed by{' '}
-                <span className="font-semibold text-primary-600">Arman Hazrati</span>
+                Developed by <span className="font-semibold text-primary-600">Arman Hazrati</span>
               </p>
               <p className="mt-1 text-xs">
                 Licensed under MIT License. This is a portfolio project demonstrating

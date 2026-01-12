@@ -10,14 +10,7 @@ import { useAuthStore } from '@/store/auth';
 import { DashboardLayout } from '@/components/layout/DashboardLayout';
 import { StatsCard } from '@/components/dashboard/StatsCard';
 import { RecentActivity } from '@/components/dashboard/RecentActivity';
-import { 
-  Users, 
-  FileText, 
-  CheckCircle, 
-  Clock,
-  TrendingUp,
-  Activity
-} from 'lucide-react';
+import { Users, FileText, CheckCircle, Clock, TrendingUp, Activity } from 'lucide-react';
 
 export default function DashboardPage() {
   const router = useRouter();
@@ -39,28 +32,28 @@ export default function DashboardPage() {
       value: '2,543',
       change: '+12.5%',
       icon: Users,
-      color: 'blue',
+      color: 'blue' as const,
     },
     {
       title: 'Service Requests',
       value: '1,234',
       change: '+8.2%',
       icon: FileText,
-      color: 'green',
+      color: 'green' as const,
     },
     {
       title: 'Completed',
       value: '892',
       change: '+15.3%',
       icon: CheckCircle,
-      color: 'purple',
+      color: 'purple' as const,
     },
     {
       title: 'Pending',
       value: '342',
       change: '-3.1%',
       icon: Clock,
-      color: 'yellow',
+      color: 'yellow' as const,
     },
   ];
 
@@ -71,7 +64,7 @@ export default function DashboardPage() {
         <div>
           <h1 className="text-3xl font-bold text-gray-900">Welcome back, {user?.name}!</h1>
           <p className="mt-1 text-gray-600">
-            Here's what's happening with your platform today.
+            Here&apos;s what&apos;s happening with your platform today.
           </p>
         </div>
 

@@ -8,14 +8,7 @@ import { useState } from 'react';
 import { useRouter } from 'next/navigation';
 import { LoginForm } from '@/components/auth/LoginForm';
 import { RegisterForm } from '@/components/auth/RegisterForm';
-import { 
-  Building2, 
-  Shield, 
-  Zap, 
-  Users, 
-  BarChart3, 
-  Lock 
-} from 'lucide-react';
+import { Building2, Shield, Zap, Users, BarChart3, Lock } from 'lucide-react';
 
 export default function HomePage() {
   const [mode, setMode] = useState<'login' | 'register'>('login');
@@ -87,8 +80,8 @@ export default function HomePage() {
                 <span className="block text-primary-600">Platform</span>
               </h1>
               <p className="text-xl text-gray-600">
-                Production-ready backend with modern frontend. Built by senior engineers, for
-                senior projects.
+                Production-ready backend with modern frontend. Built by senior engineers, for senior
+                projects.
               </p>
             </div>
 
@@ -187,7 +180,7 @@ export default function HomePage() {
               Built with Next.js 14, NestJS, TypeScript, PostgreSQL, Redis, Docker & Kubernetes
             </p>
           </div>
-          
+
           {/* Attribution Badge */}
           <div className="mt-6 flex justify-center">
             <div className="inline-flex items-center space-x-2 rounded-full border-2 border-primary-300 bg-primary-50 px-6 py-2 text-sm font-semibold text-primary-700 shadow-sm">

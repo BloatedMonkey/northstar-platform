@@ -1,10 +1,10 @@
 /**
  * Northstar Platform - Dashboard Layout Component
- * 
+ *
  * @author Arman Hazrati
  * @license MIT
  * @description Main dashboard layout with navigation and user authentication
- * 
+ *
  * This is a portfolio project demonstrating enterprise-level full-stack development.
  */
 'use client';
@@ -112,10 +112,7 @@ export function DashboardLayout({ children }: DashboardLayoutProps) {
       <div className="flex flex-1 flex-col overflow-hidden">
         {/* Top bar */}
         <header className="flex h-16 items-center justify-between border-b bg-white px-6">
-          <button
-            onClick={() => setSidebarOpen(true)}
-            className="text-gray-600 lg:hidden"
-          >
+          <button onClick={() => setSidebarOpen(true)} className="text-gray-600 lg:hidden">
             <Menu className="h-6 w-6" />
           </button>
 
@@ -139,7 +136,7 @@ export function DashboardLayout({ children }: DashboardLayoutProps) {
         {/* Page content */}
         <main className="flex-1 overflow-y-auto p-6">
           {children}
-          
+
           {/* Copyright Badge */}
           <div className="mt-8 flex justify-center">
             <div className="inline-flex items-center space-x-2 rounded-full border border-gray-200 bg-gray-50 px-4 py-2 text-xs text-gray-600">
