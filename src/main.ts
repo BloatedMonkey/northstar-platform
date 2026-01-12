@@ -10,20 +10,15 @@
  */
 
 import { NestFactory } from '@nestjs/core';
-import { ValidationPipe } from '@nestjs/common';
+import { ValidationPipe, Logger } from '@nestjs/common';
 import { SwaggerModule, DocumentBuilder } from '@nestjs/swagger';
 import helmet from 'helmet';
 import { AppModule } from './app.module';
-import { Logger } from './common/logger/logger.service';
 import { HttpExceptionFilter } from './common/filters/http-exception.filter';
 import { CorrelationIdMiddleware } from './common/middleware/correlation-id.middleware';
 
 async function bootstrap() {
-  const app = await NestFactory.create(AppModule, {
-    bufferLogs: true,
-  });
-
-  app.useLogger(app.get(Logger));
+  const app = await NestFactory.create(AppModule);
 
   app.use(
     helmet({
@@ -76,7 +71,7 @@ async function bootstrap() {
   const port = process.env.PORT || 3000;
   await app.listen(port);
 
-  app.get(Logger).log(`Application is running on: http://localhost:${port}`);
+  Logger.log(`Application is running on: http://localhost:${port}`, 'Bootstrap');
 }
 
 bootstrap();
