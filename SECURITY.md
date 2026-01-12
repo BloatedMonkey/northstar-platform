@@ -12,7 +12,7 @@ Thank you for helping improve the security of this project!
 If you discover a security vulnerability, please follow these steps:
 
 1. **DO NOT** open a public issue
-2. Email details to: [Your secure email - update this]
+2. Email details to: workarman9@gmail.com
 3. Include:
    - Description of the vulnerability
    - Steps to reproduce
@@ -118,7 +118,8 @@ Before deploying to production:
 
 ### Contact
 
-For security concerns: [Your contact information]
+For security concerns: workarman9@gmail.com  
+GitHub: https://github.com/BloatedMonkey/northstar-platform
 
 ---
 

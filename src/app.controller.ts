@@ -1,3 +1,11 @@
+/**
+ * Northstar Platform - Application Controller
+ * @author Arman Hazrati
+ * @description Health check and readiness endpoints
+ * @license MIT
+ * Copyright (c) 2024-2026 Arman Hazrati. All Rights Reserved.
+ */
+
 import { Controller, Get } from '@nestjs/common';
 import { ApiTags, ApiOperation } from '@nestjs/swagger';
 import { SkipThrottle } from '@nestjs/throttler';

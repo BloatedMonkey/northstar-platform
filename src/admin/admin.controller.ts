@@ -1,3 +1,11 @@
+/**
+ * Northstar Platform - Admin Controller
+ * @author Arman Hazrati
+ * @description Administrative endpoints for system management
+ * @license MIT
+ * Copyright (c) 2024-2026 Arman Hazrati. All Rights Reserved.
+ */
+
 import { Controller, Get, Query, UseGuards } from '@nestjs/common';
 import { ApiTags, ApiOperation, ApiBearerAuth } from '@nestjs/swagger';
 import { AdminService } from './admin.service';

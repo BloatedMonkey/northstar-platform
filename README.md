@@ -1,16 +1,87 @@
-# Northstar Backend
+# Northstar Platform
+
+<div align="center">
+
+![Portfolio Project](https://img.shields.io/badge/Portfolio-Project-blue?style=for-the-badge)
+![Production Ready](https://img.shields.io/badge/Status-Production_Ready-success?style=for-the-badge)
+![License](https://img.shields.io/badge/License-MIT-green?style=for-the-badge)
+![Author](https://img.shields.io/badge/Author-Arman_Hazrati-purple?style=for-the-badge)
+
+[![NestJS](https://img.shields.io/badge/NestJS-10.3-E0234E?logo=nestjs&logoColor=white)](https://nestjs.com/)
+[![Next.js](https://img.shields.io/badge/Next.js-14.1-000000?logo=next.js&logoColor=white)](https://nextjs.org/)
+[![TypeScript](https://img.shields.io/badge/TypeScript-5.3-3178C6?logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
+[![PostgreSQL](https://img.shields.io/badge/PostgreSQL-16-4169E1?logo=postgresql&logoColor=white)](https://www.postgresql.org/)
+[![Redis](https://img.shields.io/badge/Redis-7-DC382D?logo=redis&logoColor=white)](https://redis.io/)
+[![Docker](https://img.shields.io/badge/Docker-Ready-2496ED?logo=docker&logoColor=white)](https://www.docker.com/)
+[![Kubernetes](https://img.shields.io/badge/Kubernetes-Ready-326CE5?logo=kubernetes&logoColor=white)](https://kubernetes.io/)
+
+**Enterprise-Grade Full-Stack Service Marketplace Platform**
+
+Built by **Arman Hazrati** | Demonstrating Production-Ready Architecture
+
+[Features](#features) • [Quick Start](#getting-started) • [Architecture](#architecture) • [API Docs](#api-endpoints) • [Deployment](#deployment)
+
+</div>
+
+---
+
+## 📋 Table of Contents
+
+- [Overview](#overview)
+- [Features](#features)
+- [Tech Stack](#tech-stack)
+- [Getting Started](#getting-started)
+- [Architecture](#architecture)
+- [API Endpoints](#api-endpoints)
+- [Testing](#testing)
+- [Deployment](#deployment)
+- [Documentation](#documentation)
+- [Attribution](#attribution)
+- [License](#license)
+
+---
+
+## 🎯 Overview
 
 **Author:** Arman Hazrati  
 **License:** MIT  
-**Status:** Production-Ready
+**Status:** Production-Ready  
+**Copyright:** © 2024-2026 Arman Hazrati. All Rights Reserved.
 
 Production-grade backend service for a service marketplace platform. Built with NestJS, TypeScript, PostgreSQL, and Redis.
 
 This project demonstrates enterprise-level backend development skills, clean architecture, security best practices, and modern software engineering principles. Complete with comprehensive testing, CI/CD pipeline, Docker support, and extensive documentation.
 
-## Architecture
+---
 
-Northstar Backend follows a modular architecture with clear separation of concerns:
+## ✨ Features
+
+### Core Features
+- 🔐 **Authentication & Authorization** - JWT with refresh tokens, RBAC (4 roles)
+- 👥 **User Management** - Complete CRUD with role-based permissions
+- 📋 **Service Requests** - Full lifecycle management (draft → completed)
+- 💼 **Provider Responses** - Quote system for service providers
+- 📊 **Admin Dashboard** - Audit logs, system monitoring
+- 🔔 **Real-time Notifications** - WebSocket integration
+- ⚡ **Background Jobs** - BullMQ for async processing
+- 📈 **Observability** - Metrics, health checks, structured logging
+- 🔑 **API Keys** - Secure integration authentication
+
+### Technical Features
+- ✅ Production-ready architecture with clean code
+- ✅ Comprehensive testing (unit + E2E)
+- ✅ Docker & Kubernetes deployments
+- ✅ Database migrations with Prisma
+- ✅ Rate limiting and security headers
+- ✅ Swagger/OpenAPI documentation
+- ✅ CI/CD ready with health checks
+- ✅ Horizontal scaling support
+
+---
+
+## 🏗️ Architecture
+
+Northstar Platform follows a modular architecture with clear separation of concerns:
 
 - **Modules**: Feature-based modules (auth, users, service-requests, etc.)
 - **Guards**: Authentication and authorization guards
@@ -294,17 +365,74 @@ Use either `make` commands or npm scripts directly.
 
 Contributions, suggestions, and feedback are welcome! Please see [CONTRIBUTING.md](./CONTRIBUTING.md) for guidelines.
 
-## Author
+---
 
-**Arman Hazrati**
+## 📊 Project Statistics
+
+- **Lines of Code**: 10,000+
+- **Test Coverage**: High coverage on critical paths
+- **Files**: 100+ TypeScript/React files
+- **API Endpoints**: 20+ RESTful endpoints
+- **Database Tables**: 8 optimized tables
+- **Docker Images**: Multi-stage optimized builds
+- **Documentation**: 15+ comprehensive guides
+
+---
+
+## 🏆 Attribution
+
+This is a **portfolio project** developed by **Arman Hazrati** to demonstrate:
+
+✅ Enterprise-grade full-stack development  
+✅ Production-ready architecture and code quality  
+✅ Security best practices and authentication  
+✅ DevOps and deployment expertise  
+✅ Comprehensive testing and documentation  
+✅ Modern technology stack proficiency
+
+### Usage Rights
+
+- ✅ View and learn from the code
+- ✅ Reference in technical discussions
+- ✅ Use snippets with proper attribution
+- ❌ Do not claim as your own work
+- ❌ Do not remove attribution/copyright notices
+- ❌ Do not present as your portfolio project
+
+See [ATTRIBUTION.md](./ATTRIBUTION.md) for detailed terms.
+
+---
+
+## 👨‍💻 Author
+
+**Arman Hazrati**  
+Senior Full-Stack Engineer
 
 This project demonstrates production-grade backend development capabilities with modern technologies, clean architecture, and professional software engineering practices.
 
-## License
+📧 Contact: workarman9@gmail.com  
+💼 LinkedIn: https://www.linkedin.com/in/armanhazrati/  
+🌐 Portfolio: https://armanhazrati.dev/
+
+---
+
+## 📄 License
 
 MIT License - See [LICENSE](./LICENSE) file for details
 
-Copyright (c) 2024 Arman Hazrati
+**Copyright © 2024-2026 Arman Hazrati. All Rights Reserved.**
 
-This project is open source and available for educational purposes.
+This project is open source under MIT License with required attribution.
+
+---
+
+<div align="center">
+
+**Built with ❤️ by Arman Hazrati**
+
+⭐ Star this repo if you find it helpful! ⭐
+
+[Report Bug](https://github.com/BloatedMonkey/northstar-platform/issues) • [Request Feature](https://github.com/BloatedMonkey/northstar-platform/issues)
+
+</div>
 

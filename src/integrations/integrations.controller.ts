@@ -1,3 +1,11 @@
+/**
+ * Northstar Platform - Integrations Controller
+ * @author Arman Hazrati
+ * @description API key protected endpoints for external integrations
+ * @license MIT
+ * Copyright (c) 2024-2026 Arman Hazrati. All Rights Reserved.
+ */
+
 import { Controller, Get, UseGuards } from '@nestjs/common';
 import { ApiTags, ApiOperation, ApiSecurity } from '@nestjs/swagger';
 import { ApiKeyGuard } from '../common/guards/api-key.guard';

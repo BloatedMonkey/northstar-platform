@@ -18,6 +18,13 @@ import { HttpExceptionFilter } from './common/filters/http-exception.filter';
 import { CorrelationIdMiddleware } from './common/middleware/correlation-id.middleware';
 
 async function bootstrap() {
+  // Display copyright notice
+  console.log('\n' + '═'.repeat(70));
+  console.log('  NORTHSTAR PLATFORM - Enterprise Service Marketplace');
+  console.log('  Author: Arman Hazrati | License: MIT');
+  console.log('  Copyright © 2024-2026 Arman Hazrati. All Rights Reserved.');
+  console.log('═'.repeat(70) + '\n');
+
   const app = await NestFactory.create(AppModule);
 
   app.use(
@@ -72,6 +79,8 @@ async function bootstrap() {
   await app.listen(port);
 
   Logger.log(`Application is running on: http://localhost:${port}`, 'Bootstrap');
+  Logger.log(`API Documentation: http://localhost:${port}/api/docs`, 'Bootstrap');
+  Logger.log(`Developed by Arman Hazrati - Portfolio Project`, 'Bootstrap');
 }
 
 bootstrap();

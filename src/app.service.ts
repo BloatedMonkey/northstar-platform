@@ -1,3 +1,11 @@
+/**
+ * Northstar Platform - Application Service
+ * @author Arman Hazrati
+ * @description Core application health and readiness checks
+ * @license MIT
+ * Copyright (c) 2024-2026 Arman Hazrati. All Rights Reserved.
+ */
+
 import { Injectable, OnModuleDestroy } from '@nestjs/common';
 import { PrismaService } from './prisma/prisma.service';
 import { Redis } from 'ioredis';

@@ -7,7 +7,7 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/BloatedMonkey/sample-northstar-backend.git"
+    "url": "https://github.com/BloatedMonkey/northstar-platform.git"
   },
   "scripts": {
     "build": "nest build",
@@ -31,6 +31,7 @@
     "prisma:studio": "prisma studio",
     "prisma:seed": "ts-node prisma/seed.ts",
     "generate:api-key": "ts-node scripts/generate-api-key.ts",
+    "verify:deployment": "ts-node scripts/verify-deployment.ts",
     "dev": "npm run prisma:generate && npm run prisma:migrate && npm run start:dev",
     "precommit": "npm run lint:check && npm run format:check && npm run test",
     "docker:build": "docker build -t northstar-backend .",
