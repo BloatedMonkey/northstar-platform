@@ -1,0 +1,9 @@
+node_modules/
+dist/
+build/
+coverage/
+client/
+k8s/
+docs/
+*.js
+*.d.ts

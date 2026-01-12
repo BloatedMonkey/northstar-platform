@@ -1,0 +1,16 @@
+# ConfigMap for application configuration
+# Author: Arman Hazrati
+
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: northstar-config
+  namespace: northstar
+data:
+  NODE_ENV: "production"
+  PORT: "3000"
+  REDIS_HOST: "redis-service"
+  REDIS_PORT: "6379"
+  DATABASE_URL: "postgresql://postgres:password@postgres-service:5432/northstar"
+  CORS_ORIGIN: "https://northstar.example.com"
+  LOG_LEVEL: "info"

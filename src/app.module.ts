@@ -20,6 +20,8 @@ import { AdminModule } from './admin/admin.module';
 import { JobsModule } from './jobs/jobs.module';
 import { ObservabilityModule } from './observability/observability.module';
 import { IntegrationsModule } from './integrations/integrations.module';
+import { WebsocketModule } from './websocket/websocket.module';
+import { CacheModule } from './common/cache/cache.module';
 import { validateEnv } from './common/config/env.validation';
 import { APP_GUARD } from '@nestjs/core';
 import { ThrottlerGuard } from '@nestjs/throttler';
@@ -45,6 +47,7 @@ import { JwtAuthGuard } from './common/guards/jwt-auth.guard';
     }),
     EventEmitterModule.forRoot(),
     PrismaModule,
+    CacheModule,
     ObservabilityModule,
     AuthModule,
     UsersModule,
@@ -53,6 +56,7 @@ import { JwtAuthGuard } from './common/guards/jwt-auth.guard';
     AdminModule,
     JobsModule,
     IntegrationsModule,
+    WebsocketModule,
   ],
   controllers: [AppController],
   providers: [

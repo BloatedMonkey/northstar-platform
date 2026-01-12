@@ -1,0 +1,10 @@
+# Kubernetes namespace for Northstar application
+# Author: Arman Hazrati
+
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: northstar
+  labels:
+    name: northstar
+    environment: production
